@@ -5,85 +5,13 @@
 <div class="container">
 	<!-- !PAGE CONTENT! -->
 	<div class="w3-main w3-content w3-padding"
-		style="max-width: 1200px; margin-top: 300px">
+		style="max-width: 1200px; margin-top: 50px">
+		<section>
+				<img alt="login"
+					src="<%=request.getContextPath()%>/image/Screenshot_3.jpg"
+					width="100%">
+		</section>
 
-		<!-- First Photo Grid-->
-		<div class="w3-row-padding w3-padding-16 w3-center" id="food">
-			<div class="w3-quarter">
-				<h3>The Perfect Sandwich, A Real NYC Classic</h3>
-				<p>Just some random text, lorem ipsum text praesent tincidunt
-					ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-				<h3>The Perfect Sandwich, A Real NYC Classic</h3>
-				<p>Just some random text, lorem ipsum text praesent tincidunt
-					ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-				<h3>The Perfect Sandwich, A Real NYC Classic</h3>
-				<p>Just some random text, lorem ipsum text praesent tincidunt
-					ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-				<h3>The Perfect Sandwich, A Real NYC Classic</h3>
-				<p>Just some random text, lorem ipsum text praesent tincidunt
-					ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-				<h3>The Perfect Sandwich, A Real NYC Classic</h3>
-				<p>Just some random text, lorem ipsum text praesent tincidunt
-					ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-				<h3>The Perfect Sandwich, A Real NYC Classic</h3>
-				<p>Just some random text, lorem ipsum text praesent tincidunt
-					ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-				<h3>The Perfect Sandwich, A Real NYC Classic</h3>
-				<p>Just some random text, lorem ipsum text praesent tincidunt
-					ipsum lipsum.</p>
-			</div>
-
-			<div class="w3-quarter">
-				<h3>Let Me Tell You About This Steak</h3>
-				<p>Once again, some random text to lorem lorem lorem lorem ipsum
-					text praesent tincidunt ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-				<h3>Cherries, interrupted</h3>
-				<p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-				<p>What else?</p>
-			</div>
-			<div class="w3-quarter">
-
-				<p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-
-				<p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-
-				<p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-
-				<p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-
-				<p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-
-				<p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-			</div>
-			<div class="w3-quarter">
-
-				<p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-			</div>
-		</div>
 		<!-- Pagination -->
 		<div class="w3-center w3-padding-32">
 			<div class="w3-bar">
@@ -96,18 +24,23 @@
 			</div>
 		</div>
 
-		<hr id="about">
-
 	</div>
 	<!-- About Section -->
 	<div class="w3-container w3-padding-32 w3-center ">
-		<h3>하이퍼링크</h3>
-		<br>
-	</div>
 	<hr>
-
-
-	<!-- End page content -->
+	<span class="footer__container">
+		<ul class="footer__container__main">
+			<li><a class="footer__container__text" href="#">이용약관</a></li>
+			<li><a class="footer__container__text" href="#"
+				style="font-weight: bold;">개인정보 처리방침</a></li>
+			<li><a class="footer__container__text" href="#">운영정책</a></li>
+			<li><a class="footer__container__text" href="#">고객센터</a></li>
+			<li><a class="footer__container__text" href="#">공지사항</a></li>
+			<li><a class="footer__container__text" href="#">한국어</a></li>
+			<li><a class="footer__container__text" href="#">Copyright ©
+					KaKao Corp. All rights reserved</a></li>
+		</ul>
+	</span>
 </div>
 
 
