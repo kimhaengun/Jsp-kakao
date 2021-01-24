@@ -160,7 +160,7 @@
 	border: 1px solid rgb(210, 210, 210);
 	padding: 70px;
 	width: 650px;
-	height: 650px;
+	height: 750px;
 	margin-bottom: 20px;
 }
 
@@ -198,6 +198,40 @@
 	background-color: #007BEE;
 	color: white;
 	border: 0;
+}
+.order__box{
+	display: block;
+	margin-top: -100px;
+}
+.order__box__title{
+	font-size: 25px;
+	font-weight: 800;
+}
+.order__box__content{
+	font-size:18px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+.order__box__content__bord{
+	font-size: 18px; 
+	font-weight: 600;
+}
+.order__section__one{
+	display: flex;
+}
+.order__section__order{
+	width: 70%;
+}
+.order__section__two{
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.order__box__input{
+	margin-top:10px;
+	width: 100%;
+	height: 40px;
+	font-size: 20px;
 }
 </style>
 
