@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -199,36 +200,44 @@
 	color: white;
 	border: 0;
 }
-.order__box{
+
+.order__box {
 	display: block;
 	margin-top: -100px;
 }
-.order__box__title{
+
+.order__box__title {
 	font-size: 25px;
 	font-weight: 800;
 }
-.order__box__content{
-	font-size:18px;
+
+.order__box__content {
+	font-size: 18px;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 5px;
 }
-.order__box__content__bord{
-	font-size: 18px; 
+
+.order__box__content__bord {
+	font-size: 18px;
 	font-weight: 600;
 }
-.order__section__one{
+
+.order__section__one {
 	display: flex;
 }
-.order__section__order{
+
+.order__section__order {
 	width: 70%;
 }
-.order__section__two{
+
+.order__section__two {
 	margin-top: 10px;
 	margin-bottom: 15px;
 }
-.order__box__input{
-	margin-top:10px;
+
+.order__box__input {
+	margin-top: 10px;
 	width: 100%;
 	height: 40px;
 	font-size: 20px;
@@ -244,7 +253,8 @@
 			<!-- Links -->
 			<div>
 				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="<%=request.getContextPath()%>/index.jsp">Home</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="<%=request.getContextPath()%>/index.jsp">Home</a></li>
 				</ul>
 			</div>
 
@@ -253,12 +263,30 @@
 				<span class="navbar-text navbar-brand mb-0 h1"
 					style="font-weight: 900;"> 캐릭터 </span>
 			</div>
-			<div>
-				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="#">회원가입</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">로그인</a></li>
-				</ul>
-			</div>
+			<c:choose>
+				<c:when test="${sessionScope.principal != null}">
+					<div>
+						<ul class="navbar-nav">
+
+							<li class="navbar-text navbar-brand mb-0 h1"
+					style="font-weight: 500;">${sessionScope.principal.username}</li>
+							<li class="nav-item"><a class="nav-link"
+								href="<%=request.getContextPath()%>/user?cmd=logout">로그아웃</a></li>
+						</ul>
+					</div>
+				</c:when>
+				<c:otherwise>
+					<div>
+						<ul class="navbar-nav">
+							<li class="nav-item"><a class="nav-link"
+								href="<%=request.getContextPath()%>/user?cmd=joinForm">회원가입</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="<%=request.getContextPath()%>/user?cmd=loginForm">로그인</a></li>
+						</ul>
+					</div>
+				</c:otherwise>
+			</c:choose>
+
 
 		</div>
 	</nav>

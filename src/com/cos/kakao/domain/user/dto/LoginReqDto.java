@@ -1,5 +1,9 @@
 package com.cos.kakao.domain.user.dto;
 
-public class LoginReqDto {
+import lombok.Data;
 
+@Data
+public class LoginReqDto {
+	private String username;
+	private String password;
 }

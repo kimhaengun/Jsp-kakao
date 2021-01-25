@@ -1,4 +1,4 @@
-package com.cos.kakao.domain.user;
+package com.cos.kakao.domain.product;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,11 +10,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 
-public class User {
+public class Product {
 	private int id;
-	private String username;
-	private String password;
-	private String usernickname;
-	private String phone;
-	private String address;
+	private String image;
+	private String productname;
+	private String productcontent;
+	private int price;
 }

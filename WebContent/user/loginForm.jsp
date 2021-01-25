@@ -20,10 +20,10 @@
 					<div class="login__box">
 						<a style="font-size: 50px">kakao</a>
 						<div class="login_form">
-							<form>
-								<input type="text" placeholder="카카오메일 아이디, 이메일, 전화번호"><br />
-								<input type="text" placeholder="비밀번호"><br />
-							</form>
+							<form action="/kakao/user?cmd=login" method="post">
+								<input type="text" name="username" placeholder="카카오메일 아이디, 이메일, 전화번호" required/><br />
+								<input type="text" name="password" placeholder="비밀번호" required><br />
+
 						</div>
 						<div>
 							<p>로그인 상태 유지</p>
@@ -35,9 +35,9 @@
 							<hr>
 						</div>
 						<button class="qr__btn">QR코드 로그인</button>
-
+							</form>
 						<div class="join__form">
-							<a class="footer__container__text" href="#">회원가입</a>
+							<a class="footer__container__text" href="<%=request.getContextPath()%>/user?cmd=joinForm">회원가입</a>
 						</div>
 					</div>
 				</div>
