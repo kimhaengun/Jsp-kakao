@@ -39,7 +39,7 @@ public class ProductController extends HttpServlet {
 		if(cmd.equals("list")) {
 			List<Product> products = productService.상품목록();
 			request.setAttribute("products", products);
-			
+			System.out.println("products : "+products);
 			RequestDispatcher dis = request.getRequestDispatcher("product/list.jsp");
 			dis.forward(request, response);
 			

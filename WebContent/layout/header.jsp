@@ -21,8 +21,27 @@
 	margin-right: 150px;
 }
 
+.flex__between{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.flex{
+	display: flex;
+}
 .body_container {
 	margin-bottom: 100px;
+}
+.list__product__productname{
+	margin-top:20px;
+	font-size: 20px;
+	color: gray;
+}
+.list__product__price{
+	font-size: 20px;
+	font-weight: 500;
 }
 
 .main_container {
@@ -31,6 +50,7 @@
 	align-items: center;
 	margin-top: 180px;
 }
+
 
 .left_container {
 	margin-right: 50px;
