@@ -10,4 +10,8 @@ public class ProductService {
 	public List<Product> 상품목록() {
 		return  productDao.findAll();
 	}
+	
+	public Product 상품상세보기(int id) {
+		return productDao.findById(id);
+	}
 }

@@ -15,31 +15,42 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
 <style>
 .navb_container {
 	margin-left: 150px;
 	margin-right: 150px;
 }
-
-.flex__between{
+.flex__center{
+	margin-top:30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex__between {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.flex{
+
+.flex {
 	display: flex;
 }
+
 .body_container {
 	margin-bottom: 100px;
 }
-.list__product__productname{
-	margin-top:20px;
+
+.list__product__productname {
+	margin-top: 20px;
 	font-size: 20px;
 	color: gray;
 }
-.list__product__price{
+
+.list__product__price {
 	font-size: 20px;
 	font-weight: 500;
 }
@@ -50,7 +61,6 @@
 	align-items: center;
 	margin-top: 180px;
 }
-
 
 .left_container {
 	margin-right: 50px;
@@ -267,14 +277,15 @@
 </head>
 <body>
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-sm bg-white fixed-top navb_container">
-		<div class="container d-flex justify-content-between"
+	<nav class="navbar navbar-expand-sm bg-white navbar-black fixed-top d-flex justify-content-center">
+		<div class="container"
 			style="height: 30px;">
 			<!-- Links -->
 			<div>
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link"
-						href="<%=request.getContextPath()%>/index.jsp">Home</a></li>
+						href="<%=request.getContextPath()%>/index.jsp"><i class="material-icons" style="color: black;font-size: 40px">home</i></a></li>
+						
 				</ul>
 			</div>
 
@@ -289,7 +300,7 @@
 						<ul class="navbar-nav">
 
 							<li class="navbar-text navbar-brand mb-0 h1"
-					style="font-weight: 500;">${sessionScope.principal.username}</li>
+								style="font-weight: 500;">${sessionScope.principal.username}</li>
 							<li class="nav-item"><a class="nav-link"
 								href="<%=request.getContextPath()%>/user?cmd=logout">로그아웃</a></li>
 						</ul>

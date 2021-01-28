@@ -15,29 +15,32 @@
 		<section class="flex__between">
 			<p style="font-size: 18px; font-weight: 600;">총 개</p>
 			<span class="flex">
-			<div>
-			<p style="margin-right: 10px; font-size: 20px;">글로벌 배송 가능상품 보기</p>
-			</div>
-			<div>
-			<select name="">
-				<option>신상품순</option>
-				<option>판매량순</option>
-				<option>낮은 가격순</option>
-				<option>높은 가격순</option>
-			</select>
-			</div>
+				<div>
+					<p style="margin-right: 10px; font-size: 20px;">글로벌 배송 가능상품 보기</p>
+				</div>
+				<div>
+					<select name="">
+						<option>신상품순</option>
+						<option>판매량순</option>
+						<option>낮은 가격순</option>
+						<option>높은 가격순</option>
+					</select>
+				</div>
 			</span>
 		</section>
 		<!-- Pagination -->
 		<div class="container">
 			<c:forEach var="product" items="${products}">
 				<div class="card col-md-12 m-2">
-					<div class="card-body">
-						<img src="<%=request.getContextPath()%>/image/${product.image}"
-							width="30%">
-						<p class="list__product__productname">${product.productname}</p>
-						<p class="list__product__price">${product.price}원</p>
-					</div>
+						<div class="card-body">
+							<a href="/kakao/product?cmd=detail&id=${product.id}">
+							<img
+								src="<%=request.getContextPath()%>/image/${product.id}title.jpg"
+								width="30%">
+							<p class="list__product__productname">${product.productname}</p>
+							<p class="list__product__price">${product.price}원</p>
+							</a>
+						</div>
 				</div>
 			</c:forEach>
 

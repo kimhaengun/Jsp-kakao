@@ -9,18 +9,30 @@
 				<p class="order__box__title">01 주문상품</p>
 				<br>
 				<div class="order__section__one">
-					<img alt="" src="">이미지
+					<img
+						src="<%=request.getContextPath()%>/image/${dto.productId}title.jpg"
+						width="20%">
 
-					<div class="order__section__order">
+					<div class="order__section__order"
+						style="margin-left: 10px; margin-top: 30px; width: 100%">
 
 						<div class="order__box__content">
-							<p>[온라인 전용]</p>
+							<p>${dto.productname}</p>
 							<p>X머터리얼 아이콘</p>
 						</div>
 
 						<div class="order__box__content">
-							<p>수량</p>
-							<a>원</a>
+							<select name="count" style="width: 10%">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+							</select> <a>${dto.price}원</a>
 						</div>
 
 					</div>
@@ -52,9 +64,11 @@
 					<p class="order__box__content__bord">받는분</p>
 					<a>주문고객과 동일</a>
 				</div>
-				<input class="order__box__input" type="text" placeholder="이름 입력">
-				<input class="order__box__input" type="text" placeholder="전화번호 입력">
-				<input class="order__box__input" type="text" placeholder="주소 입력">
+				<input class="order__box__input" type="text"
+					placeholder="${dto.usernickname}"> <input
+					class="order__box__input" type="text" placeholder="${dto.phone}">
+				<input class="order__box__input" type="text"
+					placeholder="${dto.address}">
 			</section>
 			<br>
 			<button>주문</button>
