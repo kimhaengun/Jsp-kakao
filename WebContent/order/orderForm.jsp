@@ -1,3 +1,5 @@
+<%@page import="javax.swing.text.Document"%>
+<%@page import="com.cos.kakao.domain.order.dto.OrderRespDto"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file="../layout/header.jsp"%>
@@ -22,10 +24,11 @@
 						</div>
 
 						<div class="order__box__content">
-							<select name="count" style="width: 10%">
+							<select name="count" onclick="countPrice()">
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
+								<option>4</option>
 								<option>5</option>
 								<option>6</option>
 								<option>7</option>
@@ -46,9 +49,7 @@
 					<div class="order__box__content">
 						<a>상품가</a> <a>원</a>
 					</div>
-					<div class="order__box__content">
-						<a>배송비</a> <a>3,000원</a>
-					</div>
+					<br />
 					<div class="order__box__content order__box__content__bord">
 						<a>총합</a> <a>원</a>
 					</div>
@@ -91,5 +92,14 @@
 				KaKao Corp. All rights reserved</a></li>
 	</ul>
 </span>
+
+<script type="text/javascript">
+	function countPrice() {
+		$.ajax({
+
+		}).done(function() {
+		});
+	}
+</script>
 </body>
 </html>
